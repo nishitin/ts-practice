@@ -6,6 +6,6 @@ const array = [1, 2, 3, 4, 5, 6]
 const map = array.map((x: number) => x % 2 ? [x, x, x] : [x, x])
 console.log(map)
 
-// reduce関数
-const reduce = array.reduce((p, c) => c * c)
-console.log(reduce)
+// flatMap
+const flatMap = array.flatMap((n) => Array(n % 2 + 2).fill(n))
+console.log(flatMap)
